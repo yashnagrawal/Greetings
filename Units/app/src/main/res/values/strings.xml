@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Units</string>
+    <string name="c2f">C2F</string>
+    <string name="f2c">F2C</string>
+    <string name="convert">Convert</string>
+    <string name="input_value">Input Value</string>
+</resources>

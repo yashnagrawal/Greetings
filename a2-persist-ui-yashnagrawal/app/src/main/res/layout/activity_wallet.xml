@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalletActivity">
+
+
+  <TextView
+      android:id="@+id/gameDetails"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40sp"
+      android:gravity="center"
+
+      android:text="@string/gameDetails"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+  <TextView
+      android:id="@+id/txt_coins"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24sp"
+      android:gravity="center"
+      android:text="@string/coinsText"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/gameDetails" />
+
+  <Button
+      android:id="@+id/btn_die"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:minHeight="157dp"
+      android:minWidth="152dp"
+      android:layout_marginTop="52sp"
+      android:textSize="50sp"
+      android:gravity="center"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.49"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txt_coins" />
+
+  <TextView
+      android:id="@+id/txt_prev_roll"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32sp"
+      android:gravity="center"
+      android:text="@string/previousRollText"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btn_die" />
+
+  <TextView
+      android:id="@+id/txt_double_others"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="@string/doubleOthersText"
+      app:layout_constraintEnd_toEndOf="@+id/txt_total_rolls"
+      app:layout_constraintTop_toTopOf="@+id/txt_double_sixes" />
+
+  <TextView
+      android:id="@+id/txt_double_sixes"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="28sp"
+      android:gravity="center"
+      android:text="@string/doubleSixesText"
+      app:layout_constraintEnd_toStartOf="@+id/txt_double_others"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/txt_single_sixes"
+      app:layout_constraintTop_toBottomOf="@+id/txt_single_sixes" />
+
+  <TextView
+      android:id="@+id/txt_single_sixes"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp"
+      android:layout_marginEnd="4dp"
+      android:gravity="center"
+      android:text="@string/sixesRolledText"
+      app:layout_constraintEnd_toStartOf="@+id/txt_total_rolls"
+      app:layout_constraintHorizontal_bias="0.823"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txt_prev_roll" />
+
+  <TextView
+      android:id="@+id/txt_total_rolls"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="104dp"
+      android:gravity="center"
+      android:text="@string/totalDiceRollsText"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/txt_single_sixes" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
